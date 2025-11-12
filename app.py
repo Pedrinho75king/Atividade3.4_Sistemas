@@ -21,3 +21,7 @@ def quadrado(n):
     resultado = n ** 2
     return f"{n}² = {resultado}", 200
 
+@app.route("/home")
+def home():
+    return redirect("/", code=302)
+
